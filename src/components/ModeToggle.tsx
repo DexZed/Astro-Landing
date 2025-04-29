@@ -11,21 +11,13 @@ export function ModeToggle() {
   const toggleTheme = () => {
     const newTheme = theme === "dark" ? "theme-light" : "dark"
     setThemeState(newTheme)
-    localStorage.setItem("theme", newTheme)
+    document.documentElement.classList[newTheme === "dark" ? "add" : "remove"]("dark")
   }
 
   useEffect(() => {
     const isDarkMode = document.documentElement.classList.contains("dark")
     setThemeState(isDarkMode ? "dark" : "theme-light")
   }, [])
-
-  useEffect(() => {
-    const isDark =
-      theme === "dark" ||
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-
-    document.documentElement.classList[isDark ? "add" : "remove"]("dark")
-  }, [theme])
 
   return (
     <Button
