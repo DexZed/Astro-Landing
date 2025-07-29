@@ -13,9 +13,9 @@ import { GoLinkExternal } from "react-icons/go"
 interface PostCardProps {
   title: string
   description: string
-  date: string
+  date?: string
   tags: string[]
-  url: string
+  url?: string
 }
 
 const PostCard = ({ title, description, date, tags, url }: PostCardProps) => {
@@ -55,11 +55,7 @@ const PostCard = ({ title, description, date, tags, url }: PostCardProps) => {
               </Badge>
             ))}
           </div>
-          <a href={url} target="_blank" rel="noreferrer">
-            <Button variant="secondary">
-              Read More <GoLinkExternal />
-            </Button>
-          </a>
+          
         </div>
       </CardFooter>
     </Card>

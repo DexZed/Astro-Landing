@@ -1,24 +1,32 @@
 export const BIO = [
   {
-    date: "2002",
-    title: "Born in Itagüi, Antioquia",
+    date: "1997",
+    title: "Born in Dhaka, Bangladesh",
   },
   {
-    date: "2019 - 2020",
-    title: "Completed the SENA Systems Technician Program",
-    description:
-      "Caldas, Antioquia",
+    date: "2011 - 2012",
+    title: "Edexcel Ordinary Level",
+    institute: "Marie Curie International School",
+    subjects:
+      "Subjects: English Language, Bangla, General Mathematics, Pure Mathematics, Physics, Chemistry, Biology, Human Biology,Accounting",
+    results: "Results: 5 A*, 4 A",
+    awards: "Daily Star Award Receiver: 2011 - 2012 ",
   },
   {
-    date: "March 2023 - April 2024",
-    title: "Worked at Arrieritas S.A. as Administrative and Technological Assistant",
-    description:
-      "Implemented new technologies developed with Python, which improved data tracking and analysis processes, increasing efficiency by 80%.",
+    date: "2013 - 2014",
+    title: "Edexcel Advanced Level ",
+    institute: "Private Candidate",
+    subjects:
+      "Subjects: Mathematics, Physics , Chemistry, Biology",
+    results: "Results: 1 A*, 2 A's and 1 C",
+    awards: "Daily Star Award Receiver: 2013 - 2014 ",
   },
   {
-    date: "2024 - Today",
-    title: "Started his studies in Computer Engineering at Politécnico JIC",
-    description:
-      "Medellín, Colombia",
+    date: "2019 – 2025",
+    title: "Bachelors Degree",
+    institute:"North South University",
+    subjects:"Bachelor Of Science in Computer Science and Engineering",
+    results:"Major in Artificial Intelligence and Networking",
+
   },
 ]
