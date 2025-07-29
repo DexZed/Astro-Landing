@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import { Badge } from "./ui/badge"
-import { Button } from "./ui/button"
+//import { Button } from "./ui/button"
 
 interface ProjectLink {
   name: string
@@ -13,7 +13,7 @@ interface ProjectCardProps {
   title: string
   description: string
   tags: string[]
-  links: ProjectLink[]
+  links?: ProjectLink[]
 }
 
 const ProjectCard = ({
@@ -81,7 +81,7 @@ const ProjectCard = ({
           ))}
         </div>
         <p className="max-w-[800px] text-lg">{description}</p>
-        <div className="flex flex-wrap gap-4">
+        {/* <div className="flex flex-wrap gap-4">
           {links.map((link, index) => (
             <a key={index} href={link.url} target="_blank" rel="noreferrer">
               <Button variant="secondary">
@@ -90,7 +90,7 @@ const ProjectCard = ({
               </Button>
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
     </article>
   )
